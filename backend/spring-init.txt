@@ -1,0 +1,1 @@
+https://start.spring.io/#!type=maven-project&language=java&platformVersion=3.2.4&packaging=jar&jvmVersion=17&groupId=com.jonaky&artifactId=ripsa&name=ripsa&description=Sistema%20de%20stock%20-%20pedidos&packageName=com.jonaky.ripsa&dependencies=web,data-jpa,lombok,mysql
