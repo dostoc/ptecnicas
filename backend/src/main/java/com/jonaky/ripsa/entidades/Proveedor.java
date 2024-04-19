@@ -17,6 +17,7 @@ import lombok.ToString;
 @ToString
 public class Proveedor {
 
+    //
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long idProveedor;
