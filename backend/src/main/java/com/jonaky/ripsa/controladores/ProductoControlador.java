@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+import static org.springframework.data.jpa.domain.AbstractPersistable_.id;
+
 
 @RestController
 // http://localhost:8080/ripsa/  contexto de la aplicacion
@@ -21,6 +23,11 @@ public class ProductoControlador {
     @Autowired
     IProductoServicio productoServicio;
 
+    // CREATE
+
+
+    // READ
+    // ---Listar
 
     @GetMapping("/productos")
     public List<Producto> listarProductos(){
@@ -29,12 +36,27 @@ public class ProductoControlador {
         return empleados;
     }
 
+    // ---BUSCAR
 
+
+    @PostMapping("/productos/{idProducto}")
+    public Producto buscarProducto(@PathVariable Long id, @RequestBody Producto producto){
+        return productoServicio.buscarProducto(id);
+    }
+
+    // UPDATE
 
     @PostMapping("/productos")
-    public Producto agregarProducto(@RequestBody Producto producto){
+    public Producto agregarProducto(@PathVariable Producto producto){
         return productoServicio.guardarProducto(producto);
     }
+
+
+
+
+
+    // DELETE
+
 
 
 }

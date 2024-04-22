@@ -25,7 +25,7 @@ public class ProductoServicio implements IProductoServicio {
     }
 
     @Override
-    public Producto buscarProducto(String idProducto) {
+    public Producto buscarProducto(Long idProducto) {
         return productoRepocitorio.findById(idProducto).orElse(null);
     }
 

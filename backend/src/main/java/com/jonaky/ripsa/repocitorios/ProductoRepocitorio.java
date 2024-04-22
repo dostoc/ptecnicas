@@ -4,5 +4,5 @@ import com.jonaky.ripsa.entidades.Producto;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 
-public interface ProductoRepocitorio extends JpaRepository<Producto, String> {
+public interface ProductoRepocitorio extends JpaRepository<Producto, Long> {
 }

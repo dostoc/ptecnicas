@@ -9,7 +9,7 @@ public interface IProductoServicio {
 
     public List<Producto> listarProductos();
 
-    public Producto buscarProducto(String idProducto);
+    public Producto buscarProducto(Long idProducto);
 
     public Producto guardarProducto(Producto producto);
 
